@@ -1,3 +1,9 @@
+/*
+ * File: helper.c
+ * Auth: Alex Yu
+ *       Brennan D Baraban
+ */
+
 #include "shell.h"
 
 void free_args(char **args, char **front);
