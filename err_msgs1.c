@@ -14,7 +14,9 @@ char *error_2_syntax(char **args);
 char *error_env(char **args)
 {
 	char *error, *hist_str;
+	char *name = NULL;
 	int len;
+	int hist = 0;
 
 	hist_str = _itoa(hist);
 	if (!hist_str)
@@ -49,6 +51,7 @@ char *error_env(char **args)
 char *error_1(char **args)
 {
 	char *error;
+	char *name = NULL;
 	int len;
 
 	len = _strlen(name) + _strlen(args[0]) + 13;
@@ -72,7 +75,9 @@ char *error_1(char **args)
 char *error_2_exit(char **args)
 {
 	char *error, *hist_str;
+	char *name = NULL;
 	int len;
+	int hist = 0;
 
 	hist_str = _itoa(hist);
 	if (!hist_str)
@@ -106,7 +111,9 @@ char *error_2_exit(char **args)
 char *error_2_cd(char **args)
 {
 	char *error, *hist_str;
+	char *name = NULL;
 	int len;
+	int hist = 0;
 
 	hist_str = _itoa(hist);
 	if (!hist_str)
@@ -145,7 +152,9 @@ char *error_2_cd(char **args)
 char *error_2_syntax(char **args)
 {
 	char *error, *hist_str;
+	char *name = NULL;
 	int len;
+	int hist = 0;
 
 	hist_str = _itoa(hist);
 	if (!hist_str)

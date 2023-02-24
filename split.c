@@ -1,7 +1,7 @@
 /*
  * File: split.c
  * Auth: Brian Chepchieng
-         Magdalene Kilonzo
+ *       Magdalene Kilonzo
  */
 
 #include "shell.h"

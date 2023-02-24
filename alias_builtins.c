@@ -13,7 +13,6 @@ void print_alias(alias_t *alias);
  * Return: If an error occurs - -1.
  *         Otherwise - 0.
  */
-
 int shellby_alias(char **args, char __attribute__((__unused__)) **front)
 {
 	alias_t *temp = aliases;
@@ -59,7 +58,6 @@ int shellby_alias(char **args, char __attribute__((__unused__)) **front)
  * @var_name: Name of the alias.
  * @value: Value of the alias. First character is a '='.
  */
-
 void set_alias(char *var_name, char *value)
 {
 	alias_t *temp = aliases;
@@ -96,7 +94,6 @@ void set_alias(char *var_name, char *value)
  * print_alias - Prints the alias in the format name='value'.
  * @alias: Pointer to an alias.
  */
-
 void print_alias(alias_t *alias)
 {
 	char *alias_string;

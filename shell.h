@@ -20,11 +20,10 @@
 extern char **environ;
 
 /**
- * struct list_s - A new struct type defining a linked list
+ * struct list_s - A new struct type defining a linked list.
  * @dir: A directory path.
  * @next: A pointer to another struct list_s.
  */
-
 typedef struct list_s
 {
 	char *dir;
@@ -36,7 +35,6 @@ typedef struct list_s
  * @name: The name of the builtin command.
  * @f: A function pointer to the builtin command's function.
  */
-
 typedef struct builtin_s
 {
 	char *name;
@@ -46,10 +44,9 @@ typedef struct builtin_s
 /**
  * struct alias_s - A new struct defining aliases.
  * @name: The name of the alias.
- * @name: The name of the alias.
+ * @value: The value of the alias.
  * @next: A pointer to another struct alias_s.
  */
-
 typedef struct alias_s
 {
 	char *name;
@@ -103,6 +100,7 @@ int shellby_help(char **args, char __attribute__((__unused__)) **front);
 
 /* Builtin Helpers */
 char **_copyenv(void);
+void free_env(void);
 char **_getenv(const char *var);
 
 /* Error Handling */

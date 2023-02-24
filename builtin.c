@@ -11,7 +11,6 @@ int shellby_help(char **args, char __attribute__((__unused__)) **front);
  *
  * Return: A function pointer to the corresponding builtin.
  */
-
 int (*get_builtin(char *command))(char **args, char **front)
 {
 	builtin_t funcs[] = {
@@ -46,7 +45,6 @@ int (*get_builtin(char *command))(char **args, char **front)
  *
  * Description: Upon returning -3, the program exits back in the main function.
  */
-
 int shellby_exit(char **args, char **front)
 {
 	int i, len_of_int = 10;
@@ -169,9 +167,10 @@ int shellby_cd(char **args, char __attribute__((__unused__)) **front)
  * Return: If an error occurs - -1.
  *         Otherwise - 0.
  */
-
 int shellby_help(char **args, char __attribute__((__unused__)) **front)
 {
+	char *name = NULL;
+
 	if (!args[0])
 		help_all();
 	else if (_strcmp(args[0], "alias") == 0)
